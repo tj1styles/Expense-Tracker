@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    width: 100%;
+}
+.extra-contents{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    margin: auto;
+    background: linear-gradient(360deg,red,orange);
+}
+.miniContentDiv{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.nav-bar{
+    width: 100%;
+    background: linear-gradient(60deg,yellow,orange);
+    box-shadow: 2px 3px 1.2rem black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img-content{
+    width: 20%;
+    padding-top: 45px;
+    
+}
+.brandName{
+    width: 100%;
+    font-weight: 900;
+    margin-left: 10px;
+}
+.content-1{
+     width: 60%;
+     padding-top: 45px;
+     text-align: center;
+
+}
+.adiv{
+    font-size: 19px;
+     text-decoration: none;
+     color: black;
+     font-weight: 800;
+     cursor: pointer;
+}
+.adiv2{
+    font-size: 19px;
+     text-decoration: none;
+     color: white;
+     font-weight: 800;
+     cursor: pointer;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     margin-left: 20px;
+}
+.sign-up{
+    width: 20%;
+    padding-top: 35px;
+}
+.signUp{
+    background: black;
+    padding: 9px 19px;
+    margin-left: 40px;
+    margin-right: 20px;
+    border-radius: 30px;
+     font-weight: 700;
+     color: white;
+     border: none;
+     transition: all 1s ease;
+}
+.signUp:hover{
+    transform: scaleX(1.2);
+    background: purple;
+    color: yellow;
+    
+}
+.signIn{
+    background: yellow;
+    padding: 9px 19px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    transition: all 1s ease;
+}
+.signIn:hover{
+    transform: scaleX(1.2);
+    background: white;
+    color: red;
+}
+.footer{
+    margin-top: 250px;
+}
