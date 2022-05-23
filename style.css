@@ -13,7 +13,8 @@
     flex-direction: row;
     padding-top: 30px;
     margin: auto;
-    background: linear-gradient(360deg,red,orange);
+    background: linear-gradient(360deg,rgb(247, 203, 8),orange);
+    box-shadow: 4px 5px 1.2rem black;
 }
 .miniContentDiv{
     display: flex;
