@@ -3,7 +3,10 @@ const body = document.getElementById("body")
 const changeBg = document.createElement("button")
 let i = document.createElement("i")
 i.setAttribute("class","fas fa-power-off")
-changeBg.append(i)
+const para = document.createElement("p")
+para.textContent = "Incognito"
+para.setAttribute("class","para")
+changeBg.append(i,para)
 changeBg.setAttribute("class","Btn")
 const div = document.getElementById("bgChanger")
 
