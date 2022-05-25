@@ -22,15 +22,46 @@
 }
 .fas{
     font-size: 30px;
+    color: white;
+    transition: all 0.9s ease;
+}
+.fas:hover{
+    font-size: 30px;
+    color:  red;
+    
+}
+.para{
+    font-size: 19px;
+    color: yellow;
+    font-family: cursive;
+    padding-top: 6px;
+    font-weight: 800;
+}
+.para:hover{
+    font-size: 19px;
+    color: purple;
+    font-family: cursive;
+    padding-top: 6px;
+    font-weight: 800;
 }
 .bgChangerDiv{
     margin-top: 150px;
     height: 100px;
     width: 10%;
-    background: blue;
+    background: black;
+    position: fixed;
+    left: 1240px;
+    text-align: center;
+    transition: all 0.9s ease;
+}
+.bgChangerDiv:hover{
+    margin-top: 150px;
+    height: 100px;
+    width: 10%;
+    background: rgb(151, 151, 8);
     margin-left: auto;
     position: fixed;
-    left: 1250px;
+    left: 1240px;
     text-align: center;
 }
 .extra-contents{
