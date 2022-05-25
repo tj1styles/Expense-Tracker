@@ -7,6 +7,32 @@
     position: fixed;
     width: 100%;
 }
+.Btn{
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 12px;
+    cursor: pointer;
+}
+.Btn:focus{
+    background: none;
+    border: none;
+    outline: none;
+}
+.fas{
+    font-size: 30px;
+}
+.bgChangerDiv{
+    margin-top: 150px;
+    height: 100px;
+    width: 10%;
+    background: blue;
+    margin-left: auto;
+    position: fixed;
+    left: 1250px;
+    text-align: center;
+}
 .extra-contents{
     width: 100%;
     display: flex;
@@ -60,6 +86,13 @@
      cursor: pointer;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      margin-left: 20px;
+     transition: all 0.8s ease;
+}
+.adiv2:hover{
+    color: brown;
+    border-bottom: 5px solid white;
+    padding-bottom: 6px;
+    text-decoration: none;
 }
 .sign-up{
     width: 20%;
@@ -96,5 +129,59 @@
     color: red;
 }
 .footer{
-    margin-top: 250px;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.what{
+ color: white;
+ background:linear-gradient(60deg,yellow,orange) ;
+ padding: 10px;
+ border-radius: 50%;
+ font-size: 26px;
+ translate: all 2s ease;
+}
+.what:hover{
+transform: scaleY(1.2);
+cursor: pointer;
+}
+.sectionft{
+    background: linear-gradient(230deg,yellow,orange);
+padding: 60px 0px;
+ 
+}
+.foothead{
+font-size: 60px;
+font-weight: 800;
+ 
+}
+.footbody{
+font-size: 20px;
+font-weight: 500;
+ 
+}
+.fote{
+  border-right: 2px solid white;
+}
+.fotext{
+  font-size: 27px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.ugh{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.ugh:hover{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: blue !important;
 }

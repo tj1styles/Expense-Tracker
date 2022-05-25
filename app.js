@@ -1,8 +1,13 @@
 let footer = document.getElementById('footer')
-const changeBg = document.createElement("button")
 const body = document.getElementById("body")
-changeBg.textContent = "Change Bg"
-footer.append(changeBg)
+const changeBg = document.createElement("button")
+let i = document.createElement("i")
+i.setAttribute("class","fas fa-power-off")
+changeBg.append(i)
+changeBg.setAttribute("class","Btn")
+const div = document.getElementById("bgChanger")
+
+div.append(changeBg)
 changeBg.addEventListener("click", ()=>{
     let r = Math.floor(Math.random()*256)
     let g = Math.floor(Math.random()*256)
