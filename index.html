@@ -32,6 +32,11 @@
             <div class="nav-bar">
                 <div class="img-content">
                   <h5 class="brandName">FOTEXPENSE</h5>
+                  <div class="nav-barToggler">
+                      <span class="toggler"></span>
+                      <span class="toggled"></span>
+                      <span class="togglers"></span>
+                  </div>
                 </div>
                 <div class="content-1">
                    <p><a href="" class="adiv" id="link">Expenses</a></p>
@@ -51,39 +56,38 @@
             </div>
         </header>
 
-        <div class="section">
-            <div class="container">
-                <div class="row">
-
-                </div>
-            </div>
-        </div>
+        
 
         <div class="footer" id="footer">
           <div id="bgChanger" class="bgChangerDiv">
 
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-          
-<div class="sectionft">
+   <div class="section-b4">
+       <div class="formcontainer text-justify text-white">
+           <div class="contentDiv">
+            <h2 class="fothead">Fotexpenses</h2>
+            <p class="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum nam veritatis provident doloremque, nulla adipisci numquam! Cupiditate expedita atque, corrupti maiores, aspernatur commodi illum libero fuga veritatis facere doloremque?</p>
+            <button class="learnMoreBtn">Learn More</button>
+           </div>
+           <div class="formDiv">
+               <h2 class="mt-4">Newsletter</h2>
+             <form onsubmit="sendEmail(); reset();" class="hey">
+                 <div class="nameInput">
+                     <input id="nameInput" class="form-control" placeholder="Write your name" type="text">
+                  </div>
+                  <div class="emailInput">
+                      <input id="mailInput"  class="form-control" placeholder="Write your email" type="email">
+                  </div>
+                  <div class="commentArea">
+                      <textarea   class="form-control" name="" id="commentInput" cols="30" rows="10"></textarea>
+                  </div>
+                  <button class="signInBtn">Send Mail <i class="fa fa-telegram"></i></button>
+             </form>
+           </div>
+       </div>
+   </div>
+  <div class="sectionft">
     <div class="container">
         <div class="row">
             <div class="fote col-md-4">
@@ -165,9 +169,15 @@ TECHNICAL
 
 
 
-
-
-
+     
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("ExOdRziphq0uu20nT");
+        })();
+     </script>
     <script src="./plugins/wow/wow.min.js"></script>
     <script>
         new WOW().init()
