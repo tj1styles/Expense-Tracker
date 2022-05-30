@@ -6,6 +6,7 @@
 .header{
     position: fixed;
     width: 100%;
+    top: -10px;
 }
 .Btn{
     margin-top: 20px;
@@ -54,6 +55,61 @@
     text-align: center;
     transition: all 0.9s ease;
 }
+.formcontainer{
+    width: 100%;
+    background: #b444ff;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nameInput{
+    width: 100%;
+    margin-top: 10px;
+}
+.emailInput{
+    width: 100%;
+    margin-top: 10px;
+}
+.learnMoreBtn{
+    padding: 10px 15px;
+    border-radius: 26px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.signInBtn{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 26px;
+    background: rgb(247, 203, 8);
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.signInBtn:focus{
+    box-shadow: 2px 2px 3px black;
+    outline: none;
+}
+.commentArea{
+    width: 100%;
+    margin-top: 10px;
+}
+.formDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 90px;
+}
+.contentDiv{
+    width: 50%;
+    padding: 20px;
+}
 .bgChangerDiv:hover{
     margin-top: 150px;
     height: 100px;
@@ -80,7 +136,7 @@
 }
 .nav-bar{
     width: 100%;
-    background: linear-gradient(60deg,yellow,orange);
+    background: linear-gradient(180deg,yellow,orange);
     box-shadow: 2px 3px 1.2rem black;
     display: flex;
     flex-direction: row;
@@ -215,4 +271,164 @@ font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: blue !important;
+}
+.nav-barToggler{
+    border: 2px solid white;
+    width: 70px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    display: none;
+}
+.toggler{
+    width: 30px;
+    background: red;
+    padding: 4px 5px;
+   
+    transform: translateX(20px) skewX(-20deg);
+}
+
+.toggler:focus{
+}
+.toggled{
+    width: 30px;
+    background: red;
+    padding: 4px 5px;
+    transform: translateX(5px) skewX(-20deg);
+    margin-top: 4px;
+}
+.toggled:focus{
+
+}
+.togglers{
+    width: 30px;
+    background: red;
+    padding: 4px 5px;
+    margin-top: 4px;
+    transform: translateX(-13px) skewX(-20deg);
+}
+.togglers:focus{
+    
+}
+@media(max-width:500px){
+
+    .nav-bar{
+        width: 100%;
+        background: linear-gradient(180deg,yellow,orange);
+        box-shadow: 2px 3px 1.2rem black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+    .img-content{
+        width: 30%;
+        padding-top: 45px;
+        
+    }
+    .content-1{
+        width: 30%;
+        padding-top: 45px;
+        text-align: center;
+        margin-right: auto;
+   }
+   .formcontainer{
+    width: 100%;
+    background: #b444ff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .contentDiv{
+    width: 100%;
+    padding: 20px;
+    margin-top: 200px;
+   }
+   .formDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+  .hey{
+      text-align: none;
+  }
+   .sign-up{
+    width: 100%;
+    padding-top: 35px;
+  }
+  .signUp{
+    background: black;
+    padding: 9px 19px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 30px;
+     font-weight: 700;
+     color: white;
+     border: none;
+     transition: all 1s ease;
+}
+.signUp:hover{
+    transform: scaleX(1.2);
+    background: purple;
+    color: yellow;
+    
+ }
+.signIn{
+    background: yellow;
+    padding: 9px 19px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    transition: all 1s ease;
+ }
+.signIn:hover{
+    transform: scaleX(1.2);
+    background: white;
+    color: red;
+ }
+   .nav-barToggler{
+       display: block;
+       position: absolute;
+       top: 30px;
+       right: 5px;
+       width: 12%;
+       display: flex;
+       flex-direction: column;
+       padding: 5px 14px;
+   }
+   .toggler{
+       transform: translateX(3px) skewX(-20deg) translateY(4px);
+       width: 13px !important;
+       margin-bottom: 3px !important;
+       padding: 3px 10px;
+   }
+   .commentArea{
+    width: 100% !important;
+    margin-top: 10px;
+    }
+    .toggler:focus{
+
+   }
+   .toggled{
+    transform: translateX(7px) skewX(-20deg) translateY(2px);
+    width: 13px !important;
+    margin-bottom: 1px !important;
+    padding: 3px 10px;
+   }
+   .toggled:focus{}
+   .togglers{
+    transform: translateX(3px) skewX(-20deg) translateY(4px);
+    width: 13px !important;
+    margin-bottom: 10px !important;
+    padding: 3px 10px;
+   }
+   .togglers:focus{
+
+   }
 }
