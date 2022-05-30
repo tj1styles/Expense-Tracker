@@ -17,3 +17,33 @@ changeBg.addEventListener("click", ()=>{
     let b = Math.floor(Math.random()*256)
     body.style.background = `rgb(${r},${g},${b})`
 })
+
+
+
+let day = document.getElementById('day')
+let hour = document.getElementById('hour')
+let mins = document.getElementById('mins')
+let sec = document.getElementById('sec')
+let session = document.getElementById('session')
+let year = document.getElementById('year')
+
+
+function animateTime(){
+    let Dates = new Date()
+    let hrs = Dates.getHours();
+    hour.textContent = hrs;
+    mins.textContent = Dates.getMinutes();
+    sec.textContent = Dates.getSeconds();
+    year.textContent = Dates.getFullYear();
+   
+
+    if (hrs >= 12) {
+      session.textContent = 'PM';
+    } else {
+      session.textContent = 'AM';
+    }
+
+}
+
+setInterval(animateTime, 1000)
+
